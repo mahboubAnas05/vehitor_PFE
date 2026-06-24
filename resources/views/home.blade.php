@@ -31,7 +31,7 @@
 
 {{-- ===== FEATURED CARS ===== --}}
 <div class="container my-5">
-    <h2 class="mb-4" style="color: var(--royal-blue-dark);">Voitures disponibles</h2>
+    <h2 class="mb-4 text-center" style="color: var(--royal-blue-dark);">Voitures disponibles</h2>
 
     <div class="row g-4">
         {{-- @forelse is like @foreach but also handles the "empty" case --}}
@@ -54,7 +54,7 @@
                 </div>
             </div>
         @empty
-            <p class="text-muted">Aucune voiture disponible pour le moment.</p>
+            <p class="text-muted text-center">Aucune voiture disponible pour le moment.</p>
         @endforelse
     </div>
 

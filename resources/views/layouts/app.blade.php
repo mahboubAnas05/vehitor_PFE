@@ -18,11 +18,14 @@
     <nav class="navbar navbar-expand-lg navbar-vehitor">
         <div class="container">
             <a class="navbar-brand fw-bold" href="{{ route('home') }}">
-                <i class="bi bi-car-front-fill"></i> Vehitor
+                {{-- <i class="bi bi-car-front-fill"></i> Vehitor --}}
+                <img src="{{ asset('images/V.png') }}" width="50" alt="">
+                Vehitor
             </a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
-                <span class="navbar-toggler-icon"></span>
+            <button class="border border-light navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                {{-- <span class="navbar-toggler-icon"></span> --}}
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#eee"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
             </button>
 
             <div class="collapse navbar-collapse" id="navMenu">
@@ -69,7 +72,7 @@
     </nav>
 
     <!-- ===== FLASH MESSAGES (success/error alerts) ===== -->
-    <div class="container mt-3">
+    <div class="container mt-1">
         @if(session('success'))
             <div class="alert alert-success alert-dismissible fade show">
                 {{ session('success') }}
@@ -93,7 +96,7 @@
     <!-- ===== FOOTER ===== -->
     <footer class="footer-vehitor text-center">
         <div class="container">
-            <p class="mb-0">&copy; {{ date('Y') }} Vehitor - Projet de Fin d'Études OFPPT</p>
+            <p class="mb-0">&copy; {{ date('Y') }} Vehitor - Les Droits Sont Reservés</p>
         </div>
     </footer>
 

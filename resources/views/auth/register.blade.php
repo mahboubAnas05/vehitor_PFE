@@ -25,7 +25,7 @@
                     {{-- ----- choose role ----- --}}
                     <div class="mb-3">
                         <label class="form-label">Je suis :</label>
-                        <select name="role" id="role" class="form-select" required onchange="toggleAgencyFields()">
+                        <select name="role" id="role" class="form-select" onchange="toggleAgencyFields()">
                             <option value="client" {{ old('role') == 'client' ? 'selected' : '' }}>Client (je veux louer une voiture)</option>
                             <option value="agency" {{ old('role') == 'agency' ? 'selected' : '' }}>Agence (je veux louer mes voitures)</option>
                         </select>

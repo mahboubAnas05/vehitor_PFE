@@ -3,7 +3,7 @@
 @section('title', 'Nos voitures - Vehitor')
 
 @section('content')
-<div class="container my-5">
+<div class="container my-5 vh-100">
     <h2 class="mb-4" style="color: var(--royal-blue-dark);">Nos voitures</h2>
 
     {{-- ===== FILTER FORM ===== --}}
@@ -56,7 +56,7 @@
                 </div>
             </div>
         @empty
-            <div class="col-12">
+            <div class="col-12" style="margin-top: 15%">
                 <p class="text-muted text-center">Aucune voiture ne correspond à votre recherche.</p>
             </div>
         @endforelse

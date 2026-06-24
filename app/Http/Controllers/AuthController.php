@@ -40,9 +40,9 @@ class AuthController extends Controller
             'role' => 'required|in:client,agency', // only these 2 values allowed from the form
 
             // these fields are only required if role = agency
-            'agency_name' => 'required_if:role,agency|string|max:255',
-            'agency_address' => 'required_if:role,agency|string|max:255',
-            'agency_city' => 'required_if:role,agency|string|max:255',
+            'agency_name' => 'required_if:role,agency|nullable|string|max:255',
+            'agency_address' => 'required_if:role,agency|nullable|string|max:255',
+            'agency_city' => 'required_if:role,agency|nullable|string|max:255',
         ]);
 
         // create the user account first
