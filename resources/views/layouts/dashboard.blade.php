@@ -17,7 +17,8 @@
         <!-- ===== SIDEBAR ===== -->
         <div class="col-md-3 col-lg-2 px-0 sidebar-vehitor">
             <h5 class="text-center text-white py-3 border-bottom border-secondary">
-                <i class="bi bi-car-front-fill"></i> Vehitor
+                <img src="{{ asset('images/V.png') }}" width="50" style="border-radius: 50%" alt="">
+                Vehitor
             </h5>
 
             {{-- the sidebar links change depending on who is logged in --}}

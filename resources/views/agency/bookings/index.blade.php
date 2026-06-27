@@ -42,6 +42,13 @@
                                 <button type="submit" class="btn btn-sm btn-outline-danger">Refuser</button>
                             </form>
                         @endif
+                        @if($booking->status === 'confirmed')
+                            <form method="POST" action="{{ route('agency.bookings.complete', $booking) }}" class="d-inline">
+                                @csrf
+                                @method('PATCH')
+                                <button type="submit" class="btn btn-sm btn-success">✓ Terminer</button>
+                            </form>
+                        @endif
                     </td>
                 </tr>
             @empty

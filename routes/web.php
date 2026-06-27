@@ -79,6 +79,7 @@ Route::middleware(['auth', 'role:agency', 'agency.approved'])->prefix('agence')-
     // bookings on agency's cars
     Route::get('/reservations', [AgencyController::class, 'bookingsIndex'])->name('bookings.index');
     Route::patch('/reservations/{booking}/confirmer', [AgencyController::class, 'bookingConfirm'])->name('bookings.confirm');
+    Route::patch('/reservations/{booking}/terminer', [AgencyController::class, 'bookingComplete'])->name('bookings.complete');
     Route::patch('/reservations/{booking}/annuler', [AgencyController::class, 'bookingCancel'])->name('bookings.cancel');
 });
 

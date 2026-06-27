@@ -3,7 +3,7 @@
 @section('title', 'Nos voitures - Vehitor')
 
 @section('content')
-<div class="container my-5 vh-100">
+<div class="container my-5">
     <h2 class="mb-4" style="color: var(--royal-blue-dark);">Nos voitures</h2>
 
     {{-- ===== FILTER FORM ===== --}}

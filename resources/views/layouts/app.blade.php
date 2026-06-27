@@ -25,7 +25,7 @@
 
             <button class="border border-light navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
                 {{-- <span class="navbar-toggler-icon"></span> --}}
-                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#eee"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#eee"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
             </button>
 
             <div class="collapse navbar-collapse" id="navMenu">

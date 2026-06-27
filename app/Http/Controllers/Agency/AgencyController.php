@@ -104,8 +104,8 @@ class AgencyController extends Controller
             'seats' => 'required|integer|min:2|max:9',
             'price_per_day' => 'required|numeric|min:1',
             'description' => 'nullable|string|max:1000',
-            'image' => 'nullable|image|max:2048',
-            'is_available' => 'nullable|boolean',
+            'image' => 'nullable|image|mimes:jpg,jpeg,png,gif|max:2048',
+            'is_available' => 'nullable|in:0,1,true,false,on,off',        
         ]);
 
         if ($request->hasFile('image')) {
@@ -179,4 +179,12 @@ class AgencyController extends Controller
             abort(403);
         }
     }
+
+    public function bookingComplete(Booking $booking)
+    {
+        $this->authorizeCar($booking->car);
+        $booking->update(['status' => 'completed']);
+        return back()->with('success', 'Réservation terminée.');
+    }
+
 }
